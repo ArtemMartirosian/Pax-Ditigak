@@ -1,12 +1,5 @@
-import Image from "next/image";
-import {ServiceCard} from "@/features/services/components/ServiceCard";
-import {Hero} from "@/features/hero/components/Hero";
+import { redirect } from "@/navigation";
 
-export default function Home() {
-  return (
-    <div className="">
-        <Hero/>
-     <ServiceCard/>
-    </div>
-  );
+export default function RootPage() {
+  redirect("/");
 }
